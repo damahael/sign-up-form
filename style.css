@@ -69,7 +69,6 @@ a {
   flex-direction: column;
   justify-content: center;
   width: 65%;
-  padding: 56px;
 }
 
 .right-section p {
@@ -83,7 +82,7 @@ a {
 }
 
 .text {
-  background-color: rgb(245, 245, 245, 0.2);
+  background-color: rgb(245, 245, 245, 0.3);
   margin-bottom: 28px;
 }
 
@@ -127,7 +126,42 @@ input:focus {
   box-shadow: 1px 1px 4px black;
 }
 
+input:invalid {
+  border: none;
+  outline: 1px solid red;
+}
+
 form h1 {
   color: rgb(31, 30, 30);
   margin: 24px 0;
 }
+
+.right-section ul,
+.right-section h1,
+.right-section p,
+.right-section .button-section {
+  margin-left: 32px;
+}
+
+.shadow {
+  width: 100%;
+  height: 40px; /* ajuste a altura conforme necessário */
+  box-shadow: -11px 15px 10px -15px rgba(0, 0, 0, 0.6);
+}
+
+.button-section {
+  margin-top: 32px;
+}
+
+.button-section button {
+  width: 230px;
+  height: 50px;
+  border: none;
+  background-color: rgba(4, 54, 4, 0.7);
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
