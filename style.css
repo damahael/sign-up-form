@@ -84,7 +84,7 @@ a {
 
 .text {
   background-color: rgb(245, 245, 245, 0.2);
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 form {
@@ -103,16 +103,31 @@ li {
 }
 
 li:nth-child(even) {
-  margin-left: 30px;
+  margin-left: 50px;
+}
+
+label { 
+  font-weight: 600;
+  font-size: 0.7rem;
 }
 
 input {
   display: block;
   width: 20vw;
   height: 30px;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 1rem;
 }
 
-label {
-  font-weight: 600;
-  font-size: 0.7rem;
+input:focus {
+  outline: 1px solid blue;
+  border: none;
+  box-shadow: 1px 1px 4px black;
+}
+
+form h1 {
+  color: rgb(31, 30, 30);
+  margin: 24px 0;
 }
