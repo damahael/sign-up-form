@@ -131,6 +131,31 @@ input:invalid {
   outline: 1px solid red;
 }
 
+li {
+  position: relative;
+}
+
+:root {
+  --content: '';
+  --check: '';
+}
+
+label[for='confirm-password']::before {
+  position: absolute;
+  content: var(--content);
+  color: red;
+  bottom: -15px;
+}
+
+label[for='confirm-password']::after,
+label[for='password']::after {
+  position: absolute;
+  content: var(--check);
+  color: green;
+  bottom: -15px;
+  right: 0;
+}
+
 form h1 {
   color: rgb(31, 30, 30);
   margin: 24px 0;
@@ -145,7 +170,7 @@ form h1 {
 
 .shadow {
   width: 100%;
-  height: 40px; /* ajuste a altura conforme necessário */
+  height: 40px; 
   box-shadow: -11px 15px 10px -15px rgba(0, 0, 0, 0.6);
 }
 
@@ -157,7 +182,7 @@ form h1 {
   width: 230px;
   height: 50px;
   border: none;
-  background-color: rgba(4, 54, 4, 0.7);
+  background-color: #596D48;
   border-radius: 8px;
   color: white;
   font-size: 1.1rem;

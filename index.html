@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="left-section">
@@ -45,7 +46,7 @@
         <ul>
           <li>
             <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name" />
+            <input type="text" id="first-name" name="first-name"/>
           </li>
           <li>
             <label for="last-name">LAST NAME</label>
@@ -53,15 +54,15 @@
           </li>
           <li>
             <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" />
+            <input type="email" id="email" name="email"/>
           </li>
           <li>
             <label for="phone-number">PHONE NUMBER</label>
-            <input type="tel" id="phone-number" name="phone-number" />
+            <input type="tel" id="phone-number" name="phone-number"/>
           </li>
           <li>
             <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password" />
+            <input type="password" id="password" name="password" minlength="6" required/>
           </li>
           <li>
             <label for="confirm-password">CONFIRM PASSWORD</label>
@@ -69,6 +70,8 @@
               type="password"
               id="confirm-password"
               name="confirm-password"
+              minlength="6"
+              required
             />
           </li>
         </ul>
