@@ -10,14 +10,10 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-:root {
-  --font: g
-}
-
 body {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 a {
@@ -71,19 +67,20 @@ a {
   width: 65%;
 }
 
-.right-section p {
+.text {
+  background-color: rgb(245, 245, 245, 0.3);
+  height: 20%;
+  margin: 32px 0;
+}
+
+.text p {
   font-size: 1.5rem;
-  max-width: 65ch;
+  max-width: 60ch;
   font-weight: 600;
 }
 
-.right-section p:nth-child(2) {
+.text p:nth-child(2) {
   margin-bottom: 25px;
-}
-
-.text {
-  background-color: rgb(245, 245, 245, 0.3);
-  margin-bottom: 28px;
 }
 
 form {
@@ -107,7 +104,8 @@ li:nth-child(even) {
 
 label { 
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
 }
 
 input {
@@ -174,11 +172,8 @@ form h1 {
   box-shadow: -11px 15px 10px -15px rgba(0, 0, 0, 0.6);
 }
 
-.button-section {
-  margin-top: 32px;
-}
-
 .button-section button {
+  margin: 32px 0;
   width: 230px;
   height: 50px;
   border: none;
@@ -190,3 +185,13 @@ form h1 {
   cursor: pointer;
 }
 
+.button-section p{
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.button-section span {
+  color: #596D48;
+  cursor: pointer;
+}
